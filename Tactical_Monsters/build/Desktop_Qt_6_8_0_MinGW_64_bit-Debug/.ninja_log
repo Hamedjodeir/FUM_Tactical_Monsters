@@ -1,0 +1,9 @@
+# ninja log v6
+12	1246	7675546313750397	Tactical_Monsters_autogen/timestamp	9958066716376d5e
+12	1246	7675546313750397	Tactical_Monsters_autogen/mocs_compilation.cpp	9958066716376d5e
+12	1246	7675546313750397	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Tactical_Monsters_autogen/timestamp	9958066716376d5e
+12	1246	7675546313750397	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Tactical_Monsters_autogen/mocs_compilation.cpp	9958066716376d5e
+1256	7453	7675546315079342	CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/mocs_compilation.cpp.obj	4aa14a8cef23b063
+1260	7481	7675546315129294	CMakeFiles/Tactical_Monsters.dir/main.cpp.obj	9ad7fbff82a49c75
+1265	9300	7675546315179266	CMakeFiles/Tactical_Monsters.dir/mainwindow.cpp.obj	bd5f0ba3430634c3
+9300	9839	7675546395525264	Tactical_Monsters.exe	c494d19a3b2f472e
