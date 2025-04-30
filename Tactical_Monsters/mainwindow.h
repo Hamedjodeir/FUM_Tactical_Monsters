@@ -2,12 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
+#include <QPushButton>
+#include <QLabel>
+#include <QPropertyAnimation>
 
 class MainWindow : public QMainWindow
 {
@@ -17,7 +14,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onContinueButtonClicked();
+
 private:
-    Ui::MainWindow *ui;
+    QLabel* welcomeLabel;
+    QPushButton* continueButton;
+    QPropertyAnimation* welcomeAnimation;
+    QPropertyAnimation* buttonAnimation;
 };
+
 #endif // MAINWINDOW_H

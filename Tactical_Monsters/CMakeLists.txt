@@ -23,6 +23,15 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Tactical_Monsters
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        mainmenu.h mainmenu.cpp mainmenu.ui
+        gallerypage.h gallerypage.cpp gallerypage.ui
+        playersetuppage.h playersetuppage.cpp playersetuppage.ui
+        gameplaypage.h gameplaypage.cpp gameplaypage.ui
+        tile.h tile.cpp
+        grid.h grid.cpp
+        agent.h agent.cpp
+        resources.qrc
+        utils/fileparser.h utils/fileparser.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Tactical_Monsters APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -64,6 +73,7 @@ install(TARGETS Tactical_Monsters
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+qt_add_resources(Tactical_Monsters "resources.qrc")
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(Tactical_Monsters)

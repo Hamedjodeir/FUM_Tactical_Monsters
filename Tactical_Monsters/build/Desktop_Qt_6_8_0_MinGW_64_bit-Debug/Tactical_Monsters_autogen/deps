@@ -1,10 +1,16 @@
 Tactical_Monsters_autogen/timestamp: \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QParallelAnimationGroup \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QPropertyAnimation \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QString \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20type_traits.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q23utility.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qabstractanimation.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qalgorithms.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qanimationgroup.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qanystringview.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qarraydata.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qarraydataops.h \
@@ -32,6 +38,7 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qdarwinhelpers.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qdatastream.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qdebug.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qeasingcurve.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qendian.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qexceptionhandling.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qflags.h \
@@ -44,6 +51,7 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qglobalstatic.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qhash.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qhashfunctions.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qiodevice.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qiterator.h \
@@ -66,8 +74,10 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qoverload.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qpair.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qparallelanimationgroup.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qpoint.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qprocessordetection.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qpropertyanimation.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qrefcount.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qscopedpointer.h \
@@ -113,9 +123,12 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qtversionchecks.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qtypeinfo.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qtypes.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qurl.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qvariantanimation.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/qvector.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
@@ -132,20 +145,35 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qpen.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qregion.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qrgb.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qtextcursor.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qtextformat.h \
+	C:/Qt/6.8.0/mingw_64/include/QtGui/qtextoption.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qtransform.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QLineEdit \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlineedit.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
+	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtabwidget.h \
 	C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -290,94 +318,31 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
 	C:/Qt/6.8.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessAliasTargets.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompiler.cmake.in \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeCompilerIdDetection.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineRCCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindBinUtils.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeNinjaFindMake.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseImplicitIncludeInfo.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseImplicitLinkInfo.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseLibraryArchitecture.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCCompiler.cmake.in \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeRCInformation.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystem.cmake.in \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestCompilerCommon.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeTestRCCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CheckLibraryExists.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Borland-DetermineCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Cray-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GHS-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU-FindBinUtils.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/GNU.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IAR-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Intel-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/PGI-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/SCO-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/TI-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/TIClang-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindPackageMessage.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindThreads.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/FindVulkan.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake \
-	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-Determine-CXX.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake \
@@ -592,13 +557,30 @@ Tactical_Monsters_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/CMakeLists.txt \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/agent.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/agent.h \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Tactical_Monsters_autogen/moc_predefs.h \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/gallerypage.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/gallerypage.h \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/gameplaypage.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/gameplaypage.h \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/grid.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/grid.h \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/main.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/mainmenu.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/mainmenu.h \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/mainwindow.cpp \
 	D:/Project/Tactical_Monsters/Tactical_Monsters/mainwindow.h \
-	D:/Project/Tactical_Monsters/Tactical_Monsters/mainwindow.ui \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/playersetuppage.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/playersetuppage.h \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/resources.qrc \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/tile.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/tile.h \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/utils/fileparser.cpp \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/utils/fileparser.h \
+	D:/Project/Tactical_Monsters/Tactical_Monsters/gameplaypage.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe
