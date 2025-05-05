@@ -5,7 +5,7 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QPropertyAnimation>
-#include "gameplaypage.h"  // Add this include
+#include "gameplaypage.h"
 
 
 class MainMenu : public QMainWindow
@@ -21,14 +21,14 @@ private slots:
     void openPlayerSetupPage();
     void openHelpWindow();
     void closeHelpWindow();
-    void openGamePlayPage();  // Add this new slot
+    // void openGamePlayPage();
 
 private:
     QPushButton *galleryButton;
     QPushButton *startGameButton;
     QPushButton *helpButton;
     QWidget *helpWindow;
-    GamePlayPage* gameplayPage = nullptr;  // Optional: store the page if you want to keep a reference
+    GamePlayPage* gameplayPage = nullptr;
 
 };
 

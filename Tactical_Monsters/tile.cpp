@@ -3,23 +3,22 @@
 #include <QtMath>
 
 Tile::Tile(TileType type, int row, int col) {
-    const int size = 30; // radius of hex
+    const int size = 30;
     QPolygonF hex;
     for (int i = 0; i < 6; ++i) {
-        qreal angle_deg = 60 * i;  // flat-topped
+        qreal angle_deg = 60 * i;
         qreal angle_rad = M_PI / 180 * angle_deg;
         hex << QPointF(size * cos(angle_rad), size * sin(angle_rad));
     }
     setPolygon(hex);
 
-    // Hex geometry for flat-topped layout
     qreal width = 2 * size;
     qreal height = sqrt(3) * size;
     qreal xOffset = col * (3.0 / 4.0 * width);
     qreal yOffset = row * height;
 
     if (col % 2 == 1) {
-        yOffset += height / 2.0; // stagger odd columns
+        yOffset += height / 2.0;
     }
 
     setPos(xOffset, yOffset);

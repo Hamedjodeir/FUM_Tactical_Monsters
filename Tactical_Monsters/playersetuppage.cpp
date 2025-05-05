@@ -59,7 +59,7 @@ PlayerSetupPage::PlayerSetupPage(QWidget *parent)
     layout->addWidget(player2Input);
     layout->addWidget(startButton);
 
-    // Fade-in effect
+    // affects
     QGraphicsOpacityEffect* effect = new QGraphicsOpacityEffect(this);
     setGraphicsEffect(effect);
     fadeInAnimation = new QPropertyAnimation(effect, "opacity", this);

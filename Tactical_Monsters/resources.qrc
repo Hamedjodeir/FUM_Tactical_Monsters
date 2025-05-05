@@ -10,5 +10,7 @@
         <file>Assets/maps/grid6.txt</file>
         <file>Assets/maps/grid7.txt</file>
         <file>Assets/maps/grid8.txt</file>
+        
+
     </qresource>
 </RCC>

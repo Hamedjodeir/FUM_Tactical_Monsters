@@ -15,7 +15,6 @@ MainMenu::MainMenu(QWidget *parent)
     this->resize(1200, 700);
     this->setWindowTitle("Tactical Monsters - Main Menu");
 
-    // Center the window
     QScreen *screen = QGuiApplication::primaryScreen();
     QRect screenGeometry = screen->geometry();
     int x = (screenGeometry.width() - this->width()) / 2;
@@ -37,7 +36,7 @@ MainMenu::MainMenu(QWidget *parent)
 
     layout->addSpacerItem(new QSpacerItem(20, 150, QSizePolicy::Minimum, QSizePolicy::Expanding));
 
-    // Gallery Button
+    // Gallery Btttn
     galleryButton = new QPushButton("Gallery", this);
     galleryButton->setFixedSize(300, 60);
     galleryButton->setStyleSheet(
@@ -55,7 +54,7 @@ MainMenu::MainMenu(QWidget *parent)
 
     layout->addSpacerItem(new QSpacerItem(20, 30, QSizePolicy::Minimum, QSizePolicy::Fixed));
 
-    // Start Game Button
+    // Start Game Bttn
     startGameButton = new QPushButton("Start an Async PVP Game", this);
     startGameButton->setFixedSize(300, 60);
     startGameButton->setStyleSheet(
@@ -91,7 +90,7 @@ MainMenu::MainMenu(QWidget *parent)
 
     layout->addSpacerItem(new QSpacerItem(20, 80, QSizePolicy::Minimum, QSizePolicy::Expanding));
 
-    // Help Window (Hidden initially)
+    // Help Window
     helpWindow = new QWidget(this, Qt::Dialog);
     helpWindow->setFixedSize(400, 300);
     helpWindow->setWindowTitle("Help");
@@ -121,15 +120,13 @@ MainMenu::MainMenu(QWidget *parent)
         );
     helpLayout->addWidget(closeHelpBtn, 0, Qt::AlignCenter);
 
-    // Connections
     connect(galleryButton, &QPushButton::clicked, this, &MainMenu::openGalleryPage);
     connect(startGameButton, &QPushButton::clicked, this, &MainMenu::openPlayerSetupPage);
     //connect(startGameButton, &QPushButton::clicked, this, &MainMenu::openGamePlayPage);
-
     connect(helpButton, &QPushButton::clicked, this, &MainMenu::openHelpWindow);
     connect(closeHelpBtn, &QPushButton::clicked, this, &MainMenu::closeHelpWindow);
 
-    // Fade-in animations
+    //animations
     auto fadeIn = [](QWidget* widget) {
         QGraphicsOpacityEffect *effect = new QGraphicsOpacityEffect(widget);
         widget->setGraphicsEffect(effect);

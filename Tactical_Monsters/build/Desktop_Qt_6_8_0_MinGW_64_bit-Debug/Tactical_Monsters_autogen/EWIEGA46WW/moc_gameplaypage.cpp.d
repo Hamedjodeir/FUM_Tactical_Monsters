@@ -133,7 +133,9 @@ D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_b
   C:/Qt/6.8.0/mingw_64/include/QtGui/qimage.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qpolygon.h \
@@ -146,7 +148,16 @@ D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_b
   C:/Qt/6.8.0/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsPolygonItem \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QGraphicsScene \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
+  C:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -357,4 +368,5 @@ D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_b
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  D:/Project/Tactical_Monsters/Tactical_Monsters/agent.h

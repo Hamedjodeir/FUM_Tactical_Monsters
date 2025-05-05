@@ -137,6 +137,14 @@ build CMakeFiles/Tactical_Monsters.dir/utils/fileparser.cpp.obj: CXX_COMPILER__T
   OBJECT_DIR = CMakeFiles\Tactical_Monsters.dir
   OBJECT_FILE_DIR = CMakeFiles\Tactical_Monsters.dir\utils
 
+build CMakeFiles/Tactical_Monsters.dir/parser.cpp.obj: CXX_COMPILER__Tactical_Monsters_unscanned_Debug D$:/Project/Tactical_Monsters/Tactical_Monsters/parser.cpp || cmake_object_order_depends_target_Tactical_Monsters
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Tactical_Monsters.dir\parser.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Tactical_Monsters_autogen/include -isystem C:/Qt/6.8.0/mingw_64/include/QtCore -isystem C:/Qt/6.8.0/mingw_64/include -isystem C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.0/mingw_64/include/QtWidgets -isystem C:/Qt/6.8.0/mingw_64/include/QtGui
+  OBJECT_DIR = CMakeFiles\Tactical_Monsters.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tactical_Monsters.dir
+
 build CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CXX_COMPILER__Tactical_Monsters_unscanned_Debug D$:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Tactical_Monsters_autogen/EWIEGA46WW/qrc_resources.cpp || cmake_object_order_depends_target_Tactical_Monsters
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\Tactical_Monsters.dir\Tactical_Monsters_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d
@@ -153,7 +161,7 @@ build CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/EWIEGA46WW/qrc_
 #############################################
 # Link the executable Tactical_Monsters.exe
 
-build Tactical_Monsters.exe: CXX_EXECUTABLE_LINKER__Tactical_Monsters_Debug CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/mocs_compilation.cpp.obj CMakeFiles/Tactical_Monsters.dir/main.cpp.obj CMakeFiles/Tactical_Monsters.dir/mainwindow.cpp.obj CMakeFiles/Tactical_Monsters.dir/mainmenu.cpp.obj CMakeFiles/Tactical_Monsters.dir/gallerypage.cpp.obj CMakeFiles/Tactical_Monsters.dir/playersetuppage.cpp.obj CMakeFiles/Tactical_Monsters.dir/gameplaypage.cpp.obj CMakeFiles/Tactical_Monsters.dir/tile.cpp.obj CMakeFiles/Tactical_Monsters.dir/grid.cpp.obj CMakeFiles/Tactical_Monsters.dir/agent.cpp.obj CMakeFiles/Tactical_Monsters.dir/utils/fileparser.cpp.obj CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a || Tactical_Monsters_autogen Tactical_Monsters_autogen_timestamp_deps
+build Tactical_Monsters.exe: CXX_EXECUTABLE_LINKER__Tactical_Monsters_Debug CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/mocs_compilation.cpp.obj CMakeFiles/Tactical_Monsters.dir/main.cpp.obj CMakeFiles/Tactical_Monsters.dir/mainwindow.cpp.obj CMakeFiles/Tactical_Monsters.dir/mainmenu.cpp.obj CMakeFiles/Tactical_Monsters.dir/gallerypage.cpp.obj CMakeFiles/Tactical_Monsters.dir/playersetuppage.cpp.obj CMakeFiles/Tactical_Monsters.dir/gameplaypage.cpp.obj CMakeFiles/Tactical_Monsters.dir/tile.cpp.obj CMakeFiles/Tactical_Monsters.dir/grid.cpp.obj CMakeFiles/Tactical_Monsters.dir/agent.cpp.obj CMakeFiles/Tactical_Monsters.dir/utils/fileparser.cpp.obj CMakeFiles/Tactical_Monsters.dir/parser.cpp.obj CMakeFiles/Tactical_Monsters.dir/Tactical_Monsters_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a || Tactical_Monsters_autogen Tactical_Monsters_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

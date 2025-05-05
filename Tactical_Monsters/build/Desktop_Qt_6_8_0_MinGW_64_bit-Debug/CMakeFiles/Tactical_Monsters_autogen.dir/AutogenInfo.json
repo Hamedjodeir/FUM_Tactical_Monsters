@@ -303,6 +303,12 @@
 			null
 		],
 		[
+			"D:/Project/Tactical_Monsters/Tactical_Monsters/parser.h",
+			"MU",
+			"EWIEGA46WW/moc_parser.cpp",
+			null
+		],
+		[
 			"D:/Project/Tactical_Monsters/Tactical_Monsters/playersetuppage.h",
 			"MU",
 			"EWIEGA46WW/moc_playersetuppage.cpp",
@@ -416,6 +422,11 @@
 		],
 		[
 			"D:/Project/Tactical_Monsters/Tactical_Monsters/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/Project/Tactical_Monsters/Tactical_Monsters/parser.cpp",
 			"MU",
 			null
 		],

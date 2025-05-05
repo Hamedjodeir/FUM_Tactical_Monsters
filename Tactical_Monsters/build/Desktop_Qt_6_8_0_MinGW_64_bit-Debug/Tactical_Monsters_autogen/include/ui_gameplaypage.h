@@ -11,9 +11,9 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -22,47 +22,55 @@ QT_BEGIN_NAMESPACE
 class Ui_GamePlayPage
 {
 public:
+    QHBoxLayout *mainHorizontalLayout;
+    QFrame *leftPanel;
     QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayoutTop;
-    QLabel *labelPlayer1;
-    QSpacerItem *horizontalSpacer;
-    QLabel *labelPlayer2;
-    QSpacerItem *verticalSpacer;
+    QHBoxLayout *horizontalLayout;
+    QGraphicsView *graphicsView;
+    QFrame *rightPanel;
 
     void setupUi(QWidget *GamePlayPage)
     {
         if (GamePlayPage->objectName().isEmpty())
             GamePlayPage->setObjectName("GamePlayPage");
         GamePlayPage->resize(1350, 700);
-        verticalLayout = new QVBoxLayout(GamePlayPage);
+        mainHorizontalLayout = new QHBoxLayout(GamePlayPage);
+        mainHorizontalLayout->setObjectName("mainHorizontalLayout");
+        leftPanel = new QFrame(GamePlayPage);
+        leftPanel->setObjectName("leftPanel");
+        leftPanel->setMinimumSize(QSize(160, 0));
+        leftPanel->setMaximumSize(QSize(160, 16777215));
+        leftPanel->setStyleSheet(QString::fromUtf8("background-color: #d2b48c;"));
+        leftPanel->setFrameShape(QFrame::StyledPanel);
+        leftPanel->setFrameShadow(QFrame::Raised);
+
+        mainHorizontalLayout->addWidget(leftPanel);
+
+        verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        horizontalLayoutTop = new QHBoxLayout();
-        horizontalLayoutTop->setObjectName("horizontalLayoutTop");
-        labelPlayer1 = new QLabel(GamePlayPage);
-        labelPlayer1->setObjectName("labelPlayer1");
-        labelPlayer1->setStyleSheet(QString::fromUtf8("font-size: 20px; font-weight: bold; color: #2c3e50; padding: 10px;"));
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
 
-        horizontalLayoutTop->addWidget(labelPlayer1);
+        verticalLayout->addLayout(horizontalLayout);
 
-        horizontalSpacer = new QSpacerItem(1000, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+        graphicsView = new QGraphicsView(GamePlayPage);
+        graphicsView->setObjectName("graphicsView");
 
-        horizontalLayoutTop->addItem(horizontalSpacer);
-
-        labelPlayer2 = new QLabel(GamePlayPage);
-        labelPlayer2->setObjectName("labelPlayer2");
-        labelPlayer2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-        labelPlayer2->setStyleSheet(QString::fromUtf8("font-size: 20px; font-weight: bold; color: #2c3e50; padding: 10px;"));
-
-        horizontalLayoutTop->addWidget(labelPlayer2);
+        verticalLayout->addWidget(graphicsView);
 
 
-        verticalLayout->addLayout(horizontalLayoutTop);
+        mainHorizontalLayout->addLayout(verticalLayout);
 
-        verticalSpacer = new QSpacerItem(20, 500, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+        rightPanel = new QFrame(GamePlayPage);
+        rightPanel->setObjectName("rightPanel");
+        rightPanel->setMinimumSize(QSize(160, 0));
+        rightPanel->setMaximumSize(QSize(160, 16777215));
+        rightPanel->setStyleSheet(QString::fromUtf8("background-color: #d2b48c;"));
+        rightPanel->setFrameShape(QFrame::StyledPanel);
+        rightPanel->setFrameShadow(QFrame::Raised);
 
-        verticalLayout->addItem(verticalSpacer);
+        mainHorizontalLayout->addWidget(rightPanel);
 
-        verticalLayout->setStretch(1, 1);
 
         retranslateUi(GamePlayPage);
 
@@ -71,9 +79,7 @@ public:
 
     void retranslateUi(QWidget *GamePlayPage)
     {
-        GamePlayPage->setWindowTitle(QCoreApplication::translate("GamePlayPage", "Tactical Monsters - Gameplay", nullptr));
-        labelPlayer1->setText(QCoreApplication::translate("GamePlayPage", "Player 1", nullptr));
-        labelPlayer2->setText(QCoreApplication::translate("GamePlayPage", "Player 2", nullptr));
+        (void)GamePlayPage;
     } // retranslateUi
 
 };

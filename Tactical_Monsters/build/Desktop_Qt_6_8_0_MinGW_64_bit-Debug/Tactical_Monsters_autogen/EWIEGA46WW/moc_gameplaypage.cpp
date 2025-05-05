@@ -35,7 +35,23 @@ namespace {
 #ifdef QT_MOC_HAS_STRINGDATA
 struct qt_meta_stringdata_CLASSGamePlayPageENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSGamePlayPageENDCLASS = QtMocHelpers::stringData(
-    "GamePlayPage"
+    "GamePlayPage",
+    "agentSelected",
+    "",
+    "std::shared_ptr<Agent>",
+    "agent",
+    "turnChanged",
+    "team",
+    "allAgentsPlaced",
+    "agentMoved",
+    "fromRow",
+    "fromCol",
+    "toRow",
+    "toCol",
+    "handleAgentSelection",
+    "handleCellClick",
+    "row",
+    "col"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -48,12 +64,32 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSGamePlayPageENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       4,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    1,   50,    2, 0x06,    1 /* Public */,
+       5,    1,   53,    2, 0x06,    3 /* Public */,
+       7,    0,   56,    2, 0x06,    5 /* Public */,
+       8,    5,   57,    2, 0x06,    6 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+      13,    1,   68,    2, 0x08,   12 /* Private */,
+      14,    2,   71,    2, 0x08,   14 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 3, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Int,    4,    9,   10,   11,   12,
+
+ // slots: parameters
+    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   15,   16,
 
        0        // eod
 };
@@ -66,17 +102,78 @@ Q_CONSTINIT const QMetaObject GamePlayPage::staticMetaObject = { {
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSGamePlayPageENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<GamePlayPage, std::true_type>
+        QtPrivate::TypeAndForceComplete<GamePlayPage, std::true_type>,
+        // method 'agentSelected'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::shared_ptr<Agent>, std::false_type>,
+        // method 'turnChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'allAgentsPlaced'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'agentMoved'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::shared_ptr<Agent>, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'handleAgentSelection'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::shared_ptr<Agent>, std::false_type>,
+        // method 'handleCellClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
 
 void GamePlayPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    (void)_o;
-    (void)_id;
-    (void)_c;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<GamePlayPage *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: _t->agentSelected((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<Agent>>>(_a[1]))); break;
+        case 1: _t->turnChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->allAgentsPlaced(); break;
+        case 3: _t->agentMoved((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<Agent>>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5]))); break;
+        case 4: _t->handleAgentSelection((*reinterpret_cast< std::add_pointer_t<std::shared_ptr<Agent>>>(_a[1]))); break;
+        case 5: _t->handleCellClick((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (GamePlayPage::*)(std::shared_ptr<Agent> );
+            if (_t _q_method = &GamePlayPage::agentSelected; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (GamePlayPage::*)(int );
+            if (_t _q_method = &GamePlayPage::turnChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (GamePlayPage::*)();
+            if (_t _q_method = &GamePlayPage::allAgentsPlaced; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 2;
+                return;
+            }
+        }
+        {
+            using _t = void (GamePlayPage::*)(std::shared_ptr<Agent> , int , int , int , int );
+            if (_t _q_method = &GamePlayPage::agentMoved; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 3;
+                return;
+            }
+        }
+    }
 }
 
 const QMetaObject *GamePlayPage::metaObject() const
@@ -95,6 +192,44 @@ void *GamePlayPage::qt_metacast(const char *_clname)
 int GamePlayPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 6)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 6;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 6)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 6;
+    }
     return _id;
+}
+
+// SIGNAL 0
+void GamePlayPage::agentSelected(std::shared_ptr<Agent> _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void GamePlayPage::turnChanged(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void GamePlayPage::allAgentsPlaced()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void GamePlayPage::agentMoved(std::shared_ptr<Agent> _t1, int _t2, int _t3, int _t4, int _t5)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t5))) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 QT_WARNING_POP

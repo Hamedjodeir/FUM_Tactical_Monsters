@@ -14,7 +14,7 @@ GalleryPage::GalleryPage(QWidget *parent)
     centerWindow();
     this->setStyleSheet("background-color: #E28743;"); // New base color
 
-    // Back Button
+    // Back bttn
     backButton = new QPushButton("Back", this);
     backButton->setStyleSheet("QPushButton {"
                               "background-color: #8B4513;"
@@ -40,10 +40,9 @@ GalleryPage::GalleryPage(QWidget *parent)
     titleLabel->setAlignment(Qt::AlignCenter);
     titleLabel->setGeometry(0, 70, width(), 50);
 
-    // Create agent cards
     createAgentCards();
 
-    // Start animation after layout
+    // animation
     QTimer::singleShot(100, [this]() {
         animationGroup->start();
     });
@@ -64,7 +63,7 @@ void GalleryPage::centerWindow()
 
 void GalleryPage::createAgentCards()
 {
-    // Container
+    // Cardbox
     QWidget *cardsContainer = new QWidget(this);
     cardsContainer->setGeometry(50, 150, 1100, 500);
 
@@ -82,9 +81,9 @@ void GalleryPage::createAgentCards()
         card->setFixedSize(200, 250);
         card->setStyleSheet(
             "QWidget {"
-            "background-color: #FFA07A;" // Light salmon matching #E28743
+            "background-color: #FFA07A;"
             "border-radius: 15px;"
-            "border: 3px solid #8B4513;" // Darker brown
+            "border: 3px solid #8B4513;"
             "transition: all 0.3s;"
             "}"
             "QWidget:hover {"
@@ -125,7 +124,7 @@ void GalleryPage::createAgentCards()
         agentCards.append(card);
     }
 
-    // Setup animation
+    // * animation
     QTimer::singleShot(50, [this]() {
         for (auto card : agentCards)
         {

@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "mainmenu.h"   // Include your main menu class
+#include "mainmenu.h"
 #include <QVBoxLayout>
 #include <QSpacerItem>
 #include <QGraphicsOpacityEffect>
@@ -7,10 +7,8 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    // Set window size
     this->resize(800, 500);
 
-    // Set background image using Qt resource
     this->setStyleSheet("QMainWindow {"
                         "background-image: url(:/Assets/splash_background.jpg);"
                         "background-repeat: no-repeat;"
@@ -23,19 +21,16 @@ MainWindow::MainWindow(QWidget *parent)
 
     QVBoxLayout *layout = new QVBoxLayout(central);
 
-    // Top Spacer
     layout->addSpacerItem(new QSpacerItem(20, 200, QSizePolicy::Minimum, QSizePolicy::Expanding));
 
-    // Welcome Label
+    // Welcome
     welcomeLabel = new QLabel("Welcome to Tactical Monsters", this);
     welcomeLabel->setAlignment(Qt::AlignCenter);
     welcomeLabel->setStyleSheet("QLabel { font-size: 28px; font-weight: bold; color: white; }");
     layout->addWidget(welcomeLabel);
 
-    // Middle Spacer
     layout->addSpacerItem(new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding));
 
-    // Continue Button
     continueButton = new QPushButton("Continue to Main Menu", this);
     continueButton->setFixedSize(250, 50);
     continueButton->setStyleSheet(
@@ -51,13 +46,11 @@ MainWindow::MainWindow(QWidget *parent)
         );
     layout->addWidget(continueButton, 0, Qt::AlignHCenter);
 
-    // Bottom Spacer
     layout->addSpacerItem(new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Expanding));
 
-    // Connect button to slot
     connect(continueButton, &QPushButton::clicked, this, &MainWindow::onContinueButtonClicked);
 
-    // Add fade-in animations
+    // animation
     QGraphicsOpacityEffect *labelEffect = new QGraphicsOpacityEffect(this);
     welcomeLabel->setGraphicsEffect(labelEffect);
     welcomeAnimation = new QPropertyAnimation(labelEffect, "opacity", this);

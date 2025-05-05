@@ -24,7 +24,6 @@ void Grid::loadMap(const QString& path) {
         }
     }
 
-    // Optional: auto-center the view
     QRectF bounds = m_scene->itemsBoundingRect();
     m_scene->setSceneRect(bounds.center().x() - 700, bounds.center().y() - 350, 1400, 700);
 }
