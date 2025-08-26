@@ -273,6 +273,18 @@
 			null
 		],
 		[
+			"D:/Project/Tactical_Monsters/Tactical_Monsters/agentbuild.h",
+			"MU",
+			"EWIEGA46WW/moc_agentbuild.cpp",
+			null
+		],
+		[
+			"D:/Project/Tactical_Monsters/Tactical_Monsters/bfs.h",
+			"MU",
+			"EWIEGA46WW/moc_bfs.cpp",
+			null
+		],
+		[
 			"D:/Project/Tactical_Monsters/Tactical_Monsters/gallerypage.h",
 			"MU",
 			"EWIEGA46WW/moc_gallerypage.cpp",
@@ -403,6 +415,12 @@
 			"MU",
 			null
 		],
+		[
+			"D:/Project/Tactical_Monsters/Tactical_Monsters/agentbuild.cpp",
+			"MU",
+			null
+		],
+		[ "D:/Project/Tactical_Monsters/Tactical_Monsters/bfs.cpp", "MU", null ],
 		[
 			"D:/Project/Tactical_Monsters/Tactical_Monsters/gallerypage.cpp",
 			"MU",

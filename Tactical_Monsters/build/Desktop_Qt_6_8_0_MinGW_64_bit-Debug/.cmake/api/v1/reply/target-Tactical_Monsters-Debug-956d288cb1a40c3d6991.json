@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 72,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 55,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
@@ -374,7 +374,9 @@
 				22,
 				25,
 				27,
-				34
+				29,
+				31,
+				38
 			]
 		}
 	],
@@ -507,7 +509,9 @@
 				22,
 				25,
 				27,
-				34
+				29,
+				31,
+				38
 			]
 		},
 		{
@@ -525,10 +529,12 @@
 				24,
 				26,
 				28,
-				29,
 				30,
-				31,
-				32
+				32,
+				33,
+				34,
+				35,
+				36
 			]
 		},
 		{
@@ -541,15 +547,15 @@
 				13,
 				16,
 				23,
-				33
+				37
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				35,
-				36
+				39,
+				40
 			]
 		}
 	],
@@ -706,6 +712,28 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "parser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "bfs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "bfs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "agentbuild.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "agentbuild.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

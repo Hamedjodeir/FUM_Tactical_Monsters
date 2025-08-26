@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
                         "background-image: url(:/Assets/splash_background.jpg);"
                         "background-repeat: no-repeat;"
                         "background-position: center;"
-                        "background-size: cover;"
+
                         "}");
 
     QWidget *central = new QWidget(this);

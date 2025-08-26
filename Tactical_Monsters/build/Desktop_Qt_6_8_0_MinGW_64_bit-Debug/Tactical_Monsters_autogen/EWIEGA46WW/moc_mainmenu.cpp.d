@@ -128,6 +128,7 @@ D:/Project/Tactical_Monsters/Tactical_Monsters/build/Desktop_Qt_6_8_0_MinGW_64_b
   C:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.8.0/mingw_64/include/QtGui/QPixmap \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.8.0/mingw_64/include/QtGui/qbrush.h \

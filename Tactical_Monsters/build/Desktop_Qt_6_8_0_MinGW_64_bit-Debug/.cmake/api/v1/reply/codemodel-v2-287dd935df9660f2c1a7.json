@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-5a4e5738519d43aac0ea.json",
+					"jsonFile" : "directory-.-Debug-9cd39d959c60c13a9f63.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Tactical_Monsters::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Tactical_Monsters-Debug-519dd710a0c744d1bb79.json",
+					"jsonFile" : "target-Tactical_Monsters-Debug-956d288cb1a40c3d6991.json",
 					"name" : "Tactical_Monsters",
 					"projectIndex" : 0
 				},

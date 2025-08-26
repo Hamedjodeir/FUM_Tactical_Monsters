@@ -1,7 +1,10 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/">
-        <file>Assets/splash_background.jpg</file>  <!-- Your splash screen background -->
-        <file>Assets/mainmenu_background.png</file> <!-- Your main menu background -->
+        <!-- Backgrounds -->
+        <file>Assets/splash_background.jpg</file>
+        <file>Assets/mainmenu_background.png</file>
+
+        <!-- Maps -->
         <file>Assets/maps/grid1.txt</file>
         <file>Assets/maps/grid2.txt</file>
         <file>Assets/maps/grid3.txt</file>
@@ -10,7 +13,32 @@
         <file>Assets/maps/grid6.txt</file>
         <file>Assets/maps/grid7.txt</file>
         <file>Assets/maps/grid8.txt</file>
-        
+
+        <!-- Agent images -->
+        <file>Assets/agents/billy.png</file>
+        <file>Assets/agents/reketon.png</file>
+        <file>Assets/agents/medusa.png</file>
+        <file>Assets/agents/sir_lamorak.png</file>
+        <file>Assets/agents/angus.png</file>
+        <file>Assets/agents/colonel_baba.png</file>
+                <file>Assets/agents/duraham.png</file>
+                <file>Assets/agents/boi.png</file>
+                <file>Assets/agents/bunka.png</file>
+                <file>Assets/agents/death.png</file>
+                <file>Assets/agents/eloi.png</file>
+                <file>Assets/agents/elsa.png</file>
+                <file>Assets/agents/frost.png</file>
+                <file>Assets/agents/kabu.png</file>
+                <file>Assets/agents/kanar.png</file>
+                <file>Assets/agents/karissa.png</file>
+                <file>Assets/agents/khan.png</file>
+                <file>Assets/agents/rajakal.png</file>
+                <file>Assets/agents/rambo.png</file>
+                <file>Assets/agents/sabrina.png</file>
+                <file>Assets/agents/salih.png</file>
+                <file>Assets/agents/sanka.png</file>
+                <file>Assets/agents/sir_philip.png</file>
+                <file>Assets/agents/tusk.png</file>
 
     </qresource>
 </RCC>

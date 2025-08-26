@@ -2,7 +2,7 @@
 #include <QPolygonF>
 #include <QtMath>
 
-Tile::Tile(TileType type, int row, int col) {
+Tile::Tile(TileType type, int row, int col): m_row(row), m_col(col), m_type(type) {
     const int size = 30;
     QPolygonF hex;
     for (int i = 0; i < 6; ++i) {
@@ -35,4 +35,9 @@ void Tile::setStyle(TileType type) {
     default:       setBrush(QBrush(Qt::lightGray)); break;
     }
     setPen(QPen(Qt::black));
+}
+void Tile::addNeighbor(Tile* neighbor) {
+    if (neighbor && neighbor != this) {
+        m_neighbors.push_back(neighbor);
+    }
 }

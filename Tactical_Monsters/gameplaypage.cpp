@@ -16,6 +16,7 @@
 #include <QLabel>
 #include <QMouseEvent>
 #include <QDebug>
+#include "agentbuild.h"
 
 GamePlayPage::GamePlayPage(const QString& player1, const QString& player2, QWidget *parent)
     : QWidget(parent)
@@ -29,7 +30,7 @@ GamePlayPage::GamePlayPage(const QString& player1, const QString& player2, QWidg
     ui->setupUi(this);
     setFixedSize(1350, 700);
 
-    // Center
+    // Center main
     QRect screenGeometry = QGuiApplication::primaryScreen()->geometry();
     int x = (screenGeometry.width() - width()) / 2;
     move(x, 0);
@@ -98,10 +99,24 @@ GamePlayPage::GamePlayPage(const QString& player1, const QString& player2, QWidg
     }
 
     // make agents
-    for (int i = 0; i < 5; ++i) {
-        team1Agents.push_back(std::make_shared<Agent>(i+1, Agent::BlackAgent, Agent::Team1));
-        team2Agents.push_back(std::make_shared<Agent>(i+1, Agent::RedAgent, Agent::Team2));
+#include "agentBuild.h"   // at top of file
+
+    // build all agents
+    auto allAgents = AgentBuild::createAllAgents();
+
+    // Split them between panels (or later allow players to draft/pick)
+    for (int i = 0; i < allAgents.size(); ++i) {
+        if (i % 2 == 0) {
+            auto a = std::make_shared<Agent>(*allAgents[i]); // copy
+            a->setTeam(Agent::Team1);
+            team1Agents.push_back(a);
+        } else {
+            auto a = std::make_shared<Agent>(*allAgents[i]); // copy
+            a->setTeam(Agent::Team2);
+            team2Agents.push_back(a);
+        }
     }
+
 
     Parser parser(6);
     auto cellData = parser.parse();
@@ -148,57 +163,35 @@ void GamePlayPage::setupSidePanels() {
 }
 
 void GamePlayPage::createAgentWidget(QVBoxLayout* layout, std::shared_ptr<Agent> agent) {
-    const double hexSize = 25.0;
-    const double innerSize = 15.0;
-
     QFrame* agentFrame = new QFrame();
-    agentFrame->setStyleSheet(
-        "QFrame {"
-        "   background-color: #f5f5dc;"
-        "   border: 2px solid #d2b48c;"
-        "   border-radius: 5px;"
-        "}"
-        "QFrame:hover {"
-        "   background-color: #e6d5b8;"
-        "   border: 2px solid #b8860b;"
-        "}"
-        );
-    agentFrame->setFixedHeight(80);
+    agentFrame->setStyleSheet("QFrame { background-color: #f5f5dc; border: 2px solid #d2b48c; border-radius: 5px; }"
+                              "QFrame:hover { background-color: #e6d5b8; border: 2px solid #b8860b; }");
+    agentFrame->setFixedHeight(100);
     agentFrame->setProperty("agentId", agent->getId());
 
     QHBoxLayout* agentLayout = new QHBoxLayout(agentFrame);
     agentLayout->setContentsMargins(5, 5, 5, 5);
 
-    // agent hexagon
-    QGraphicsScene* agentScene = new QGraphicsScene(this);
-    QGraphicsView* agentView = new QGraphicsView(agentScene);
-    agentView->setFixedSize(60, 60);
-    agentView->setRenderHint(QPainter::Antialiasing);
+    // --- IMAGE ---
+    QLabel* imageLabel = new QLabel();
+    QPixmap pix(agent->getImagePath());
+    if (!pix.isNull()) {
+        imageLabel->setPixmap(pix.scaled(60, 60, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    } else {
+        imageLabel->setText("No Img");
+        imageLabel->setAlignment(Qt::AlignCenter);
+    }
+    agentLayout->addWidget(imageLabel);
 
-    QPolygonF hex = createHexagon(30, 30, hexSize);
-    QGraphicsPolygonItem* hexItem = agentScene->addPolygon(hex);
-    hexItem->setBrush(Qt::lightGray);
-    hexItem->setPen(QPen(Qt::black));
-
-    QPolygonF agentHex = createHexagon(30, 30, innerSize);
-    QGraphicsPolygonItem* agentItem = agentScene->addPolygon(agentHex);
-
-    QColor agentColor = (agent->getType() == Agent::BlackAgent) ? Qt::black : Qt::red;
-    QColor borderColor = (agent->getTeam() == Agent::Team1) ? QColor(255, 140, 0) : Qt::magenta;
-
-    agentItem->setBrush(agentColor);
-    agentItem->setPen(QPen(borderColor, 2));
-
-    // agent informattion
+    // --- INFO ---
     QLabel* agentInfo = new QLabel();
-    agentInfo->setText(QString("%1\nHP: %2\nDMG: %3")
+    agentInfo->setText(QString("%1\nHP: %2  DMG: %3")
                            .arg(agent->getName())
                            .arg(agent->getHp())
                            .arg(agent->getDmg()));
     agentInfo->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
-
-    agentLayout->addWidget(agentView);
     agentLayout->addWidget(agentInfo);
+
     layout->addWidget(agentFrame);
 }
 

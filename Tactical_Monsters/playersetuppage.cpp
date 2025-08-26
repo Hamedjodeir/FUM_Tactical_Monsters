@@ -79,7 +79,7 @@ void PlayerSetupPage::startGame()
         return;
     }
 
-    auto* gamePage = new GamePlayPage(player1, player2); // Pass player names here if needed
+    auto* gamePage = new GamePlayPage(player1, player2); // Pass player names
 
     gamePage->show();
     this->close();
